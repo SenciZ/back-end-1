@@ -10,7 +10,7 @@ app.get('/api/users', (req, res)=>{
     res.status(200).send(friends)
 })
 
-app.get('/weather/:temperature', (req, res) =>{
+app.get('/weather/:temp', (req, res) =>{
     const {temp} = req.params
     const phrase = `<h3> It was ${temp} today</h3>`;
     res.status(200).send(phrase)
